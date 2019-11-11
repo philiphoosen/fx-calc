@@ -1,25 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+import ConversionForm from './components/ConversionForm/ConversionFormContainer';
+import Color from './constants/color';
+
+const Main = styled.div``;
+
+const Header = styled.header`
+  background-color: ${Color.SECONDARY};
+  display: flex;
+  padding-left: 20px;
+  font-size: calc(10px + 2vmin);
+  color: ${Color.PRIMARY};
+`;
+
+const HeaderTitle = styled.h1`
+  font-size: 32px;
+`;
+
+const Content = styled.div`
+  padding:10px;
+  text-align: center;
+`;
+
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Main>
+      <Header className="App-header">
+        <HeaderTitle>FX-Calc</HeaderTitle>
+      </Header>
+      <Content>
+        <h2>Convert Your Currency</h2>
+        <ConversionForm />
+      </Content>
+    </Main>
   );
 }
 

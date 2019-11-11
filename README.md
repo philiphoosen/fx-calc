@@ -1,7 +1,13 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# FX-Calc
+Author: Philip Hoosen
 
-## Available Scripts
+## Tech Design
+- a
+- b
 
+## CI / CD
+
+## Limitations
 In the project directory, you can run:
 
 ### `yarn start`
