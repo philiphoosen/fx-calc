@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import ConversionForm from './components/ConversionForm/ConversionFormContainer';
 import Color from './constants/color';
+import "ie-array-find-polyfill";
 
 const Main = styled.div``;
 

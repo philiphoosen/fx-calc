@@ -31,8 +31,7 @@ export const AmountInput = styled.input`
 `;
 
 const ConvertedContainer = styled.div`
-  min-width: 165px;
-  max-width: 180px;
+  width: 165px;
   overflow-x: auto;
   color: white;
   margin: 5px 13px 5px 5px;
